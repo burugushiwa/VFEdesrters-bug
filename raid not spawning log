@@ -1,0 +1,23 @@
+Exception filling window for Verse.Dialog_DebugOptionListLister: System.MissingMethodException: bool VFEEmpire.EmpireUtility.IsDeserter(Verse.PawnKindDef)
+  at (wrapper dynamic-method) RimWorld.PawnGroupMakerUtility.RimWorld.PawnGroupMakerUtility.PawnGenOptionValid_Patch1(RimWorld.PawnGenOption,RimWorld.PawnGroupMakerParms,System.Collections.Generic.List`1<RimWorld.PawnGenOptionWithXenotype>)
+  at RimWorld.PawnGroupMakerUtility.CanUseOption (RimWorld.PawnGenOption o, RimWorld.XenotypeDef xenotype, RimWorld.PawnGroupMakerParms groupParms, System.Collections.Generic.List`1[T] chosenOptions, System.Single pointsLeft, System.Single maxOptionCost, System.Boolean leaderChosen) [0x00034] in <95de19971c5d40878d8742747904cdcd>:0 
+  at RimWorld.PawnGroupMakerUtility.GetOptions (RimWorld.PawnGroupMakerParms groupParms, RimWorld.FactionDef faction, System.Collections.Generic.List`1[T] options, System.Single pointsTotal, System.Single pointsLeft, System.Nullable`1[T] maxCost, System.Collections.Generic.List`1[T] chosenOptions, System.Boolean leaderChosen) [0x000a6] in <95de19971c5d40878d8742747904cdcd>:0 
+  at RimWorld.PawnGroupKindWorker_Normal.MinPointsToGenerateAnything (RimWorld.PawnGroupMaker groupMaker, RimWorld.FactionDef faction, RimWorld.PawnGroupMakerParms parms) [0x00038] in <95de19971c5d40878d8742747904cdcd>:0 
+  at RimWorld.PawnGroupMaker.MinPointsToGenerateAnything (RimWorld.FactionDef faction, RimWorld.PawnGroupMakerParms parms) [0x0000b] in <95de19971c5d40878d8742747904cdcd>:0 
+  at RimWorld.FactionDef+<>c__DisplayClass115_0.<MinPointsToGeneratePawnGroup>b__1 (RimWorld.PawnGroupMaker pgm) [0x00000] in <95de19971c5d40878d8742747904cdcd>:0 
+  at System.Linq.Enumerable.Min[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] selector) [0x00038] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
+  at RimWorld.FactionDef.MinPointsToGeneratePawnGroup (RimWorld.PawnGroupKindDef groupKind, RimWorld.PawnGroupMakerParms parms) [0x0004f] in <95de19971c5d40878d8742747904cdcd>:0 
+  at RimWorld.RaidStrategyWorker.MinimumPoints (RimWorld.Faction faction, RimWorld.PawnGroupKindDef groupKind) [0x00000] in <95de19971c5d40878d8742747904cdcd>:0 
+  at RimWorld.RaidStrategyWorker.CanUseWith (RimWorld.IncidentParms parms, RimWorld.PawnGroupKindDef groupKind) [0x00027] in <95de19971c5d40878d8742747904cdcd>:0 
+  at Verse.DebugActionsIncidents+<>c__DisplayClass2_0.<ExecuteRaidWithFaction>b__3 (RimWorld.RaidStrategyDef s) [0x00006] in <95de19971c5d40878d8742747904cdcd>:0 
+  at System.Linq.Enumerable+WhereListIterator`1[TSource].ToList () [0x00017] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
+  at System.Linq.Enumerable.ToList[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x0001f] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
+  at Verse.DebugActionsIncidents+<>c__DisplayClass2_2.<ExecuteRaidWithFaction>b__2 () [0x00062] in <95de19971c5d40878d8742747904cdcd>:0 
+  at Verse.Dialog_DebugOptionLister.DebugAction (System.String label, System.Action action, System.Boolean highlight) [0x00023] in <95de19971c5d40878d8742747904cdcd>:0 
+  at Verse.Dialog_DebugOptionListLister.DoListingItems () [0x00036] in <95de19971c5d40878d8742747904cdcd>:0 
+  at Verse.Dialog_OptionLister.DoWindowContents (UnityEngine.Rect inRect) [0x00176] in <95de19971c5d40878d8742747904cdcd>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <95de19971c5d40878d8742747904cdcd>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) Verse.Log:Verse.Log.Error_Patch1 (string)
+Verse.Window:InnerWindowOnGUI (int)
+UnityEngine.GUI:CallWindowDelegate (UnityEngine.GUI/WindowFunction,int,int,UnityEngine.GUISkin,int,single,single,UnityEngine.GUIStyle)
